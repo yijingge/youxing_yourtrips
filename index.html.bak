@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>悠行旅游官网</title>
+  <meta name="renderer" content="webkit"/>
+  <meta name="force-rendering" content="webkit"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="./css/public.css">
+  <link rel="stylesheet" href="./lib/swiper4/css/swiper.min.css">
+  <script>
+    // 分辨率大于等于1680，大部分为1920的情况下，调用此css
+    if(window.screen.width >= 1680){
+      document.write('<link rel="stylesheet" href="./css/index_1920.css">');
+    } else if(window.screen.width >= 1600){
+      // 分辨率再在1600-1680的情况下，调用此css
+      document.write('<link rel="stylesheet" href="./css/index_1600.css">');
+    } else{
+      // 分辨率小于1600的情况下，调用此css
+      document.write('<link rel="stylesheet" href="./css/index_1366.css">');
+    }
+  </script>
+</head>
+<body>
+<!--[if lte IE 8]>
+<script>window.location.href = 'http://support.dmeng.net/upgrade-your-browser.html?referrer=' + encodeURIComponent(window.location.href);</script>
+<![endif]-->
+<!-- SwiperVerticle -->
+
+<div id="swiperVerticle" class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <!-- 轮播图片banner -->
+      <div class="banner">
+        <div class="layer_title">
+          <img src="./img/logo.png" alt='logo'>
+        </div>
+        <div class="loopBanner layer_middle" id="swiperBanner">
+          <div class="banner_title">
+            <p>悠行旅游</p>
+            <p>让旅行简单快乐</p>
+            <p>高端私人定制， 为你定制一份暖心的回忆</p>
+          </div>
+          <ul class="clearfix">
+            <li>
+              <img class="sliderimg" src="./img/banner-4.png" width="100%">
+            </li>
+            <li>
+              <img class="sliderimg" src="./img/banner-2.png" width="100%">
+            </li>
+            <li>
+              <img class="sliderimg" src="./img/banner-3.png" width="100%">
+            </li>
+            <li>
+              <img class="sliderimg" src="./img/banner-1.png" width="100%">
+            </li>
+          </ul>
+        </div>
+        <div class="bannerFooter layer_footer">
+          <div class="layer_footer_top youtrips">
+            <img src="./img/youtrips.png" alt="">
+          </div>
+          <div class="layer_footer_bottom">
+            <div>
+              <img class="nextPage" data-id="1" src="./img/arrow.png" alt=''>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide briefSlider">
+      <div id="cloud3"></div>
+      <div id="cloud1"></div>
+      <div id="cloud2"></div>
+      <div class="layer" style="z-index: 100;">
+        <div class="layer_title">
+          <h2>企业简介</h2>
+          <p class="p2">introduction</p>
+        </div>
+        <div class="layer_middle layer_middle_brief">
+          <p class="paragraph">悠行旅游是一家集资源驱动、技术驱动为一体的旅游服务提供商，旗下拥有“定制旅行”、
+            “旅游基础设施服务”两大业务。创立于2015年10月，总部设在苏州科技城，
+            旗下两家全资子公司：苏州飞鹰在线旅游发展有限公司和苏州悠行国际旅行社有限公司，注册资金均为1000万元。
+            公司现有员工100余名，业务涵盖国内及东南亚、欧洲、美洲、澳洲等多地区定制旅行服务。
+          </p>
+          <p class="paragraph">
+            悠行旅游以“让旅游简单、快乐”为使命，已成功为7000多家企业、20000多个家庭量身定制境内外出行方案，
+            团队由一群立志成为行业格局改写者的年轻人组成，勤奋、团结、小个体大能量是我们的代名词。
+          </p>
+          <ul class="brief clearfix">
+            <li>
+             <div>
+               <p class="brief_small_title">悠行使命</p>
+               <p>mission</p>
+               <p class="border_white"></p>
+               <ul clearfix>
+                 <li>"让旅游简单，快乐"</li>
+               </ul>
+             </div>
+              <img src="./img/bg_mission.png" alt=''>
+            </li>
+            <li>
+              <div>
+                <p class="brief_small_title">悠行愿景</p>
+                <p>vision</p>
+                <p class="border_white"></p>
+                <ul class="clearfix">
+                  <li>成为客户体验最好的 </li>
+                  <li>旅游服务提供商 </li>
+                </ul>
+              </div>
+              <img src="./img/bg_vision.png" alt=''>
+            </li>
+            <li>
+             <div>
+               <p class="brief_small_title">悠行理念</p>
+               <p>idea</p>
+               <p class="border_white"></p>
+               <ul clearfix>
+                 <li>服务创造价值</li>
+                 <li>技术提升效率</li>
+               </ul>
+             </div>
+              <img src="./img/bg_concept.png" alt=''>
+            </li>
+            <li>
+              <div>
+                <p class="brief_small_title">悠行价值观</p>
+                <p>values</p>
+                <p class="border_white"></p>
+                <ul class="values clearfix">
+                  <li>勤奋团结</li>
+                  <li>乐于分享</li>
+                  <li>勇于挑战</li>
+                  <li>驾驭变化</li>
+                  <li>敬畏规则</li>
+                  <li>敬畏专业</li>
+                  <li>结果导向</li>
+                  <li>赢在执行</li>
+                </ul>
+              </div>
+              <img src="./img/bg_values.png" alt=''>
+            </li>
+          </ul>
+        </div>
+
+        <div class="layer_footer">
+          <div class="youtrips">
+            <img src="./img/youtrips.png" alt="">
+          </div>
+          <div class="arrow">
+            <img class="nextPage" data-id="2" src="./img/arrow.png" alt=''>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="layer clearfix history">
+        <div class="layer_title">
+          <h2>发展历程</h2>
+          <p class="p2">development</p>
+        </div>
+        <div class="layer_middle historyContainer">
+          <div class="content-top">
+            <div class="first">
+              <img src="./img/icon_location.png" alt=''>
+            </div>
+            <div class="sec">
+              <ul>
+                <li class="year">2015</li>
+                <li>10月 &nbsp;悠行旅游正式成立</li>
+              </ul>
+            </div>
+            <div class="three">
+              <ul>
+                <li class="year">2017</li>
+                <li>05月 &nbsp;签约携程定制，“核心供应商”</li>
+                <li>07月 &nbsp;一站式智慧旅游SaaS服务系统， “飞鹰ERPV1.0”正式上线</li>
+                <li>08月&nbsp; 签约阿里巴巴飞猪定制游“特邀供应商”</li>
+                <li>09月 &nbsp;签约途牛定制游供应商</li>
+                <li>11月 &nbsp;签约马蜂窝定制游供应商</li>
+                <li>12月 &nbsp;2017年营收突破8000万</li>
+              </ul>
+            </div>
+            <div class="fourth">
+              <ul>
+                <li class="year">Future</li>
+                <li>无限可能</li>
+                <li><img style="width: 210px;height: 56px;" src="./img/logo.png" alt=''></li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeAxle">
+            <img class="timeArrow" src="./img/timeArrow.png" alt="">
+          </div>
+          <div class="content-bottom">
+            <div class="first"></div>
+            <div class="sec">
+              <ul>
+                <li class="year">2016</li>
+                <li>04月 &nbsp;切入江浙沪定制游业务</li>
+                <li>05月 &nbsp;上海分公司成立</li>
+                <li>09月 &nbsp;切入东南亚定制游业务</li>
+                <li>10月 &nbsp;技术团队成立</li>
+                <li>12月 &nbsp;2016年营收突破4000万</li>
+              </ul>
+            </div>
+            <div class="three">
+              <ul>
+                <li class="year">2018</li>
+                <li>03月  &nbsp;济南分公司成立</li>
+                <li>04月  &nbsp;海南分公司成立</li>
+                <li>08月  &nbsp;旅游资源一站式直采平台 “飞鹰分销v1.0” 正式上线</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="arrow layer_footer history_footer">
+          <img class="nextPage" data-id="3" src="./img/arrow.png" alt=''>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide" style="background:#f0f2f5;">
+      <div class="layer">
+        <div class="layer_title">
+          <h2>联系我们</h2>
+          <p class="p2">Contact Us</p>
+        </div>
+        <ul class="layer_middle contact clearfix">
+          <li>
+            <div class="inner">
+              <figure>
+                <img src="./img/icon_custom.png" alt=''>
+                <figcaption>专属定制游</figcaption>
+              </figure>
+              <p class="inner_h2">如果您需要一份专属的私人定制或企业团建定制，请联系我们。</p>
+              <div class="border">
+                <span></span>
+              </div>
+              <div class="contactWay clearfix">
+                <img class="logoIcon" src="./img/logoIcon.png" alt=''>
+                <div>
+                  <p> 联系人：陈先生</p>
+                  <p> 手机号：13771832354</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="inner">
+              <figure>
+                <img src="./img/icon_resource.png" alt=''>
+                <figcaption>行业资源</figcaption>
+              </figure>
+              <p class="inner_h2">如果您拥有旅游行业资源，譬如景点门票、车队、酒店、导游、餐饮等，请联系我们。</p>
+              <div class="border">
+                <span></span>
+              </div>
+              <div class="contactWay clearfix">
+                <img class="logoIcon" src="./img/logoIcon.png" alt=''>
+                <div>
+                  <p> 联系人：陈女士</p>
+                  <p> 手机号：18014911115</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="inner">
+              <figure>
+                <img src="./img/icon_customer.png" alt=''>
+                <figcaption>同业客户</figcaption>
+              </figure>
+              <p class="inner_h2">如果您是旅游从业者，需要行业资源，譬如景点门票、车队、酒店等，请联系我们。</p>
+              <div class="border">
+                <span></span>
+              </div>
+              <div class="contactWay clearfix">
+                <img class="logoIcon" src="./img/logoIcon.png" alt=''>
+                <div>
+                  <p> 联系人：陈女士</p>
+                  <p> 手机号：18014911115</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <footer class="contact_footer">
+          <ul class="clearfix">
+            <li>
+              <img class="logo" src="./img/logoFooter.png" alt=''>
+            </li>
+            <li>
+              <p>© 2015-2018 苏州悠行国际旅行社有限公司 苏ICP备15005767号-2</p>
+              <p> 客服专线：0512-68083330 (工作时间：早9点 - 晚6点) 地址：苏州科技城科灵路78号苏高新软件园5号楼4楼</p>
+            </li>
+            <li class="clearfix">
+              <img class="wecaht fl" src="./img/wecaht.png" alt=''>
+              <p class="fl">扫一扫 <br>关注我们</p>
+              <img class="fl qrCode" src="./img/qrCode.png" alt=''>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <div class="page">
+    <ul class="swiper-pagination"></ul>
+  </div>
+  </div>
+</div>
+<div class="company"> <span>2015-2018苏州悠行国际旅行社有限公司苏ICP备15005767号-2</span></div>
+<!-- Swiper JS -->
+<script src="./lib/jquery.js"></script>
+<script src="./lib/unslider.min.js"></script>
+<script src="./lib/swiper4/js/swiper.min.js"></script>
+<script src="./lib/cloud.js"></script>
+<!--轮播banner-->
+<script>
+  $('.layer').css('height', document.body.clientHeight)
+  function imgReload () {
+    var imgHeight = 0;
+    var wtmp = $("body").width();
+    $("#swiperBanner ul li").each(function () {
+      $(this).css({ width: wtmp + "px" });
+    });
+    $(".sliderimg").each(function () {
+      $(this).css({ width: wtmp + "px" });
+      imgHeight = $(this).height();
+    });
+  }
+  $(window).resize(function () {
+    imgReload();
+  });
+  $(document).ready(function (e) {
+    imgReload();
+    var unslider = $('#swiperBanner').unslider({
+        dots: true,
+        delay: 2000,
+        fluid: true
+      }),
+      data = unslider.data('unslider');
+    $('.unslider-arrow').click(function () {
+      var fn = this.className.split(' ')[1];
+      data[fn]();
+    });
+  });
+</script>
+
+<script>
+  // window.onresize = function () {
+  //   var docEl = document.documentElement,
+  //     resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+  //     recalc = function() {
+  //       var clientWidth = docEl.clientWidth;
+  //       if (!clientWidth) return;
+  //       if (clientWidth < 1200) {
+  //         document.documentElement.style.fontSize = '14px'
+  //       }
+  //     };
+  //   if (!document.addEventListener) return;
+  //   window.addEventListener(resizeEvt, recalc, false);
+  //   document.addEventListener('DOMContentLoaded', recalc, false);
+  // }
+  var swiper = new Swiper('#swiperVerticle', {
+    direction: 'vertical',
+    mousewheel: {
+      sensitivity : 0.5,
+    },
+    touchRatio: 0,
+    pagination: {
+      clickable: true,
+      el: '.swiper-pagination',
+      type: 'custom',
+      renderCustom: function (swiper, current, total) {
+        if (current == 4) {
+          $('.company').hide()
+        } else {
+          $('.company').show()
+        }
+        var paginationHtml = "";
+        for (var i = 0; i < total; i++) {
+          switch (i) {
+            case 0:
+              text = '悠行旅游';
+              break;
+            case 1:
+              text = '企业简介';
+              break;
+            case 2:
+              text = '发展历程';
+              break;
+            case 3:
+              text = '联系我们';
+              break;
+          }
+          if (i == current - 1) {
+            paginationHtml += '<li class="swiper-pagination-custom activeTitle"><span>' + text + '</span></li>';
+          } else {
+            paginationHtml += '<li class="swiper-pagination-custom"><span>' + text + '</span></li>';
+          }
+        }
+        return paginationHtml;
+      }
+    }
+  });
+  $('.swiper-pagination').on('click', 'li', function () {
+    var index = $(this).index()
+    swiper.slideTo(index, 500, false); //切换到第一个slide，速度为1秒
+  })
+  $('.nextPage').on('click', function () {
+    var index = $(this).attr('data-id')
+    console.log(index)
+    swiper.slideTo(index, 500, false); //切换到第一个slide，速度为1秒
+  })
+</script>
+
+</body>
+
+</html>

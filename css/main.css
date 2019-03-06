@@ -1,0 +1,243 @@
+html, body {
+    height: 926px;
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+ul ,li {
+    list-style: none;
+}
+input{
+    text-indent:16px;
+    cursor: pointer;
+}
+h2{
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+}
+.p2{
+    text-transform: capitalize;
+    text-align: center;
+    color: #999;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    zoom: 1;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.make{
+    padding-left: 40px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.make-custom{
+    width: 120px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0;
+    color: #cccccc;
+    border: solid 1px #ebeae4;
+}
+.private ul li input{
+    width: 120px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0;
+    color: #cccccc;
+    border: solid 1px #ebeae4;
+
+}
+.private ul li .active{
+    border: 1px solid #089fff;
+    color: #089fff;
+}
+.make span{
+    color: red;
+    padding-right: 2px;
+}
+.make-destination{
+    width: 148px;
+    height: 38px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: solid 1px #ebeae4;
+}
+.make-top{
+    margin-top: 16px;
+}
+.make-top-corporate{
+    margin-top: 16px;
+    display: none;
+}
+.box{
+    height: 40px;
+    width: 140px;
+    background-color: #ebeae4;
+    border-radius: 4px;
+    border: solid 1px #ebeae4;
+}
+.box input{
+    border: none;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #999999;
+}
+.box .gt{
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: none;
+    color: #999999;
+    border-radius: 4px;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    padding:0;
+    margin:0;
+    display: block;
+    float: left;
+}
+input::-webkit-input-placeholder{
+    /*padding-left: 16px;*/
+    color: #ccc;
+
+}
+/*浏览器的兼容问题*/
+input::-webkit-input-placeholder{ /* WebKit, Blink, Edge */
+    color: #ccc;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ccc;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ccc;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ccc;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+}
+#renjun{
+    visibility:hidden
+}
+.tcp_box{
+    position: relative;
+}
+.pl_tcp{
+    width: 350px;
+    height: 31px;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #cccccc;
+    position: absolute;
+    left:130px;
+    top: 13px;
+}
+.t_h{
+    /*width: 33px;*/
+    /*height: 11px;*/
+    position: absolute;
+    right: 674px;
+    bottom: 8px;
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #cccccc;
+}
+.cover{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: none;
+}
+.cover1{
+    width: 100%;
+    height:100%;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+.alert{
+    width: 556px;
+    height: 324px;
+    /*background-color: #ffffff;*/
+    border-radius: 4px;
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    background-image: url("../img/cosmos.png");
+    /*transform: translate(-50%, -50%);*/
+    /*-webkit-transform: translate(-50%, -50%);*/
+    /*-moz-transform: translate(-50%, -50%);*/
+    z-index: 99;
+    text-align: center;
+    opacity: 1;
+
+}
+.cosmos{
+    width: 100%;
+    height: 100%;
+    /*background-color: #ffffff;*/
+    border-radius: 4px;
+    opacity: 1;
+}
+.mark{
+
+}
+.now:hover{
+    box-shadow: 0px 2px 8px rgba(13, 139, 255, 0.5) !important;
+}
+.active:hover{
+    color: #089fff !important;
+    border-color:#089fff !important;
+}
+.active1:hover{
+    color: #089fff !important;
+    border-color:#089fff !important;
+}
+input:focus{outline:none;}
+button:focus{outline: 0;}
+textarea:focus{outline: 0;}

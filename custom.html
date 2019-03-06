@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>悠行旅游官网</title>
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon" sizes="16x16">
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta name="keywords" content="旅游,悠行,定制, trip, tour,travel,tourism">
+    <meta name="description" content="这是一个关于旅游服务的网站">
+    <Meta name="Robots" Content="All|index|follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="lib/laydate/laydate/laydate.js"></script>
+    <script src="lib/My97DatePicker/WdatePicker.js"></script>
+    <script>
+        // 分辨率大于等于1680，大部分为1920的情况下，调用此css
+        if (window.screen.width >= 1680) {
+            document.write('<link rel="stylesheet" href="./css/index_1920.css">');
+        } else if (window.screen.width >= 1600) {
+            // 分辨率再在1600-1680的情况下，调用此css
+            document.write('<link rel="stylesheet" href="./css/index_1600.css">');
+        } else {
+            // 分辨率小于1600的情况下，调用此css
+            document.write('<link rel="stylesheet" href="./css/index_1366.css">');
+        }
+    </script>
+</head>
+<body style="height: 926px;background-color: #f0f2f5;">
+<div style="background-color: #f0f2f5;height: 926px">
+    <div style="width:100%;height: 100px;background-color: #ffffff;box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.04);margin-bottom: 24px"
+         class="clearfix">
+        <img src="./img/logo.png" style="width: 221px;height: 62px;float: left;margin-top: 19px;margin-left: 154px;">
+        <input type="button" value="返回官网"
+               style="width: 120px;height: 40px;background-color: #ffffff;border-radius: 4px;border: solid 1px #089fff;font-family: MicrosoftYaHei;font-size: 16px;color: #089fff;float: right;margin-top: 31px;margin-right: 154px;text-indent: 0;line-height: 28px"
+               onclick="window.location.href='index.html'" ;>
+    </div>
+    <div style="width: 1180px;height: 768px;background-color: #ffffff;box-shadow: 0px 4px 19px 1px rgba(0, 0, 0, 0.04);border-radius: 4px;position: relative">
+        <h5 class="make"
+            style="height: 17px;line-height: 17px; font-family: MicrosoftYaHei;font-size: 18px;font-weight: normal;font-stretch: normal;letter-spacing: 0px;color: #333333;padding-top: 38px;margin-bottom: 32px">
+            填写定制信息
+            <span style="font-size: 12px;color: #cccccc;"> 让悠悠更好的为您服务！</span>
+        </h5>
+        <!--左边表单-->
+        <form style="" id="form">
+            <div class="private">
+                <label class="make"
+                       style="vertical-align: middle">
+                    <span>*</span>
+                    出游性质
+                </label>
+                <ul style="display: inline-block;vertical-align: middle;position: relative" class="button">
+                    <li>
+                        <input onclick="geren()" type="button" value="私人订制" id="button1" class="active"
+                               style="text-indent: 0px"
+                        >
+                        <img src="img/duihao.png" class="biaoshi1"
+                             style="width: 20px;height: 20px;position: absolute;left: 102px;top: 0px;">
+                    </li>
+                    <li>
+                        <input onclick="gongsi()" type="button" value="公司订制" style="margin-left: 19px;text-indent: 0px"
+                               id="button2" class="active1"
+                        >
+                        <img src="img/duihao.png" class="biaoshi2"
+                             style="width: 20px;height: 20px;position: absolute;left: 241px;top: 0px;display: none">
+                    </li>
+                </ul>
+            </div>
+            <div class="div">
+                <div class="make-top" style="position: relative">
+                    <label class="make" style="margin-left: 14px"><span>*</span>出发地</label>
+                    <input id="departure" onfocus="seStyle()" onblur="setStyle()" name="departure" type="text"
+                           placeholder="请输入出发地" class="make-destination" autocomplete="off">
+                    <img src="img/gantanhao.png" class="mark"
+                         style="width: 16px;height: 16px;position: absolute;left: 242px;top: 10px;display: none">
+                    <label class="make"><span>*</span>目的地</label>
+                    <input id="destination" onfocus="rStyle()" onblur="brStyle()" required name="destination"
+                           type="text" placeholder="请输入目的地" class="make-destination" autocomplete="off">
+                    <img src="img/gantanhao.png" class="marktwo"
+                         style="width: 16px;height: 16px;position: absolute;left: 498px;top: 10px;display: none">
+                </div>
+                <div class="make-top" style="position: relative">
+                    <label class="make"><span>*</span>出发日期</label>
+                    <input type="text" onfocus="sStyle()" onblur="srStyle()" required id="departureDate"
+                           name="departureDate" placeholder="请选择出发日期"
+                           style="width: 404px;height: 38px;border-radius: 4px;border: solid 1px #ebeae4;"
+                           autocomplete="off"
+                    >
+                    <img src="img/gantanhao.png" class="markthree"
+                         style="width: 16px;height: 16px;position: absolute;left: 498px;top: 10px;display: none">
+                </div>
+                <div class="make-top">
+                    <label class="make"><span>*</span>出游天数</label>
+                    <ul class="box" style="display: inline-block;vertical-align: middle">
+                        <li>
+                            <button type=“button” id="left" class="gt" style="border-right: 1px solid #ebeae4;">—
+                            </button>
+                        </li>
+                        <li><input name="travelDays" id="travelDays" type="text" value="1" style="text-indent: 0px"/></li>
+                        <li>
+                            <button type=“button” id="right" class="gt"
+                                    style="border-left: 1px solid #ebeae4;font-size: 19px">+
+                            </button>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="make-top">
+                    <div class="make" style="display: inline-block;vertical-align: middle"><span>*</span>出游人数</div>
+                    <ul class="box" style="display: inline-block;vertical-align: middle">
+                        <li>
+                            <button type=“button” id="peopleleft" class="gt" style="border-right: 1px solid #ebeae4">—
+                            </button>
+                        </li>
+                        <li><input name="travelNumber" id="peopletext" type="text" value="1" style="text-indent: 0px"/>
+                        </li>
+                        <li>
+                            <button type=“button” id="peopleright" class="gt"
+                                    style="border-left: 1px solid #ebeae4;font-size: 19px">+
+                            </button>
+                        </li>
+                    </ul>
+                    <span style="font-family: MicrosoftYaHei;font-size: 14px;font-weight: normal;font-stretch: normal;letter-spacing: 0px;color: #333333;margin:0 16px">成人</span>
+                    <ul class="box" style="display: inline-block;vertical-align: middle">
+                        <li>
+                            <button type=“button” id="childrenleft" class="gt"
+                                    style="border-right: 1px solid #ebeae4">
+                                —
+                            </button>
+                        </li>
+                        <li><input name="travelNumberChildren" id="childrentext" type="text" value="0"
+                                   style="text-indent: 0px"/></li>
+                        <li>
+                            <button type=“button” id="childrenright" class="gt"
+                                    style="border-left: 1px solid #ebeae4;font-size: 19px">+
+                            </button>
+                        </li>
+                    </ul>
+                    <span style="font-family: MicrosoftYaHei;font-size: 14px;font-weight: normal;font-stretch: normal;letter-spacing: 0px;color: #333333;margin:0 16px">儿童</span>
+                </div>
+                <div class="make-top">
+                    <label class="make"><span id="renjun">*</span>人均预算</label>
+                    <input name="budget" type="number" placeholder="请输入人均预算" id="budget"
+                           style="width: 399px;height: 40px;background-color: #ffffff;border-radius: 4px;border: solid 1px #ebeae4;"
+                           autocomplete="off"
+                           onfocus="renStyle()" onblur="reStyle()"
+                    >
+                </div>
+                <div class="make-top-corporate" style="position: relative">
+                    <label class="make"><span>*</span>公司名称</label>
+                    <input id="companyName" required name="companyName"
+                           class="corporate" type="text" placeholder="请输入公司名称"
+                           style="width: 399px;height: 40px;background-color: #ffffff;border-radius: 4px;border: solid 1px #ebeae4;"
+                           onfocus="lStyle()" onblur="ltStyle()"
+                           autocomplete="off">
+                    <img src="img/gantanhao.png" class="markfour"
+                         style="width: 16px;height: 16px;position: absolute;left: 494px;top: 10px;display: none">
+                    <!--<img src="img/duihao.png" class="markfour1"-->
+                         <!--style="width: 20px;height: 20px;position: absolute;left: 498px;top: 1px;display: none">-->
+                </div>
+                <div class="make-top" style="position: relative">
+                    <label class="make" style="margin-left: 14px"><span>*</span>联系人</label>
+                    <input id="contactName" onfocus="tStyle()" onblur="btStyle()" required name="contactName"
+                           type="text" class="make-destination" placeholder="请输入联系人姓名" autocomplete="off">
+                    <img src="img/gantanhao.png" class="markfive"
+                         style="width: 16px;height: 16px;position: absolute;left: 242px;top: 10px;display: none">
+
+                    <label class="make" style="margin-left: -20px"><span>*</span>联系电话</label>
+                    <input id="contactPhone" required name="contactPhone"
+                           type="number" class="make-destination" placeholder="请输入联系电话"
+                           onblur="phonestyle()"
+                           onfocus="eStyle()"
+                           onkeyup="this.value=this.value.replace(/\D/g,'')"
+                           onafterpaste="this.value=this.value.replace(/\D/g,'')" autocomplete="off">
+                    <img src="img/gantanhao.png" class="marksix"
+                         style="width: 16px;height: 16px;position: absolute;left: 492px;top: 10px;display: none">
+                </div>
+                <div class="make-top">
+                    <div class="tcp_box">
+                        <label class="make" style="vertical-align:top"><span
+                                style="vertical-align:top;visibility: hidden">*</span>其他需求</label>
+                        <textarea id="otherRequirements" dirname="otherRequirements" class="tcp_content" maxlength="100"
+                                  onchange="this.value=this.value.substring(0,100)"
+                                  onkeydown="this.value=this.value.substring(0,100)"
+                                  onkeyup="this.value=this.value.substring(0,100)" name="otherRequirements"
+                                  onblur="teStyle()" onfocus="textStyle()"
+                                  style="width: 398px;height: 120px;background-color: #ffffff;border-radius: 4px;border: solid 1px #ebeae4; resize:none ;text-indent: 16px;padding-top: 8px"></textarea>
+                        <p class="pl_tcp">如有其他个性化需求，请尽量描述清晰，以便悠悠更好的为您提供服务！</p>
+                        <span class="t_h"><i>0</i>/100</span>
+                    </div>
+                </div>
+                <input type="button" onclick="logon()" onmousedown="onmou()" onmouseup="onmouup()" class="now" value="立即订制"
+                       style="width: 260px;height: 48px;background-color: #089fff;border-radius: 24px;border-width: 0.01px;
+                   font-size: 16px;font-weight: normal;font-stretch: normal;letter-spacing: 0px;color: #ffffff;margin: 28px 0 36px 123px;outline:none;text-indent: 0"
+                >
+                <input type="hidden" name="source" id="source" value="C">
+                <input type="hidden" name="orderSource" id="orderSource" value="1">
+            </div>
+        </form>
+        <!--右边图片-->
+        <div style="position: absolute;right: 0;top: 0;">
+            <img src="img/makebanner.png">
+        </div>
+    </div>
+    <div class="cover">
+        <div class="cover1"></div>
+        <div class="alert">
+            <img src="img/ICON.png" style="width: 72px;height: 72px;margin-top: 44px">
+            <h1 style="font-family: MicrosoftYaHei;font-size: 28px;font-weight: normal;font-stretch: normal;letter-spacing: 0px;color: #089fff;margin-top: 24px;">
+                提交成功！</h1>
+            <h4 style="font-family: MicrosoftYaHei;font-weight: normal;font-stretch: normal;letter-spacing: 0px;color: #333333;margin-top: 16px">
+                悠悠将尽快安排定制师联系您，请耐心等待。</h4>
+            <input id="home" type="button" onclick="home()" value="返回官网" style="width: 320px;height: 48px;background-color: #089fff;border-radius: 24px;border-width: 1px;
+                   font-size: 16px;font-weight: normal;font-stretch: normal;letter-spacing: 0px;color: #ffffff;outline:none;margin-top: 34px;">
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="lib/jquery.js"></script>
+<script type="text/javascript">
+    var left = document.querySelector("#left");
+    var right = document.querySelector("#right");
+    var i = document.getElementById("travelDays").value;
+    var peopleleft = document.querySelector("#peopleleft");
+    var peopleright = document.querySelector("#peopleright");
+    var j = document.getElementById("peopletext").value;
+    var childrenleft = document.querySelector("#childrenleft");
+    var childrenright = document.querySelector("#childrenright");
+    var k = document.getElementById("childrentext").value;
+    var alert = document.querySelector(".cover");
+
+    function teStyle() {
+        document.getElementById('otherRequirements').style.border = "1px solid #ebeae4"
+    }
+    function textStyle() {
+        document.getElementById('otherRequirements').style.border = "1px solid #089fff"
+    }
+    function seStyle() {
+        document.getElementById('departure').style.border = "1px solid #089fff"
+        $('.mark').css('display', 'none')
+    }
+    function setStyle() {
+        document.getElementById('departure').style.border = "1px solid #ebeae4"
+
+        var str = /^[\u4e00-\u9fa5]{2,}$/
+        if (!(str.test($('#departure').val()))) {
+            $('#departure').val('')
+            return false;
+        } else if (str) {
+            return true;
+        }
+    }
+    function rStyle() {
+        document.getElementById('destination').style.border = "1px solid #089fff"
+        $('.marktwo').css('display', 'none')
+    }
+    function sStyle() {
+        document.getElementById('departureDate').style.border = "1px solid #089fff"
+        $('.markthree').css('display', 'none')
+
+    }
+    function srStyle() {
+        document.getElementById('departureDate').style.border = "1px solid #ebeae4"
+    }
+    function lStyle() {
+        document.getElementById('companyName').style.border = "1px solid #089fff"
+        $('.markfour').css('display', 'none')
+    }
+    function ltStyle() {
+        document.getElementById('companyName').style.border = "1px solid #ebeae4"
+    }
+    function tStyle() {
+        document.getElementById('contactName').style.border = "1px solid #089fff"
+        $('.markfive').css('display', 'none')
+    }
+
+
+    function eStyle() {
+        // document.getElementById('contactPhone').style.border = "1px solid #089fff"
+        $('#contactPhone').css('border', '1px solid #089fff')
+        $('.marksix').css('display', 'none')
+    }
+    // function setStyle() {
+    //
+    // }
+    function brStyle() {
+       document.getElementById('destination').style.border = "1px solid #ebeae4"
+        var str = /^[\u4e00-\u9fa5]{2,}$/
+        if (!(str.test($('#destination').val()))) {
+            $('#destination').val('')
+            return false;
+        } else if (str) {
+            return true;
+        }
+    }
+    function renStyle() {
+        document.getElementById('budget').style.border = "1px solid #089fff"
+    }
+    function reStyle() {
+        document.getElementById('budget').style.border = "1px solid #ebeae4"
+    }
+    function btStyle() {
+        document.getElementById('contactName').style.border = "1px solid #ebeae4"
+        var str = /^[\A-Za-z\u4e00-\u9fa5]{2,6}$/
+        // var bt = value.replace(/\s/g,"")
+        if (!(str.test($('#contactName').val()))) {
+            $('#contactName').val('')
+            return false;
+        } else if (str) {
+            return true;
+        }
+    }
+    function phonestyle(mobileNum) {
+        document.getElementById('contactPhone').style.border = "1px solid #ebeae4"
+        var ph = /^1[3|5|7|8|][0-9]{9}$/
+        if (!(ph.test($("#contactPhone").val()))) {
+            $('#contactPhone').val('')
+            return false;
+        } else if (ph) {
+
+            return true;
+        }
+    }
+
+    left.onclick = function (e) {
+        e.preventDefault();
+        if (i <= 1) {
+            i = 1
+        } else {
+            i--
+            document.getElementById("text").value = i;
+        }
+    }
+    right.onclick = function (e) {
+        e.preventDefault();
+        i++
+        document.getElementById("text").value = i;
+
+    }
+    peopleleft.onclick = function (e) {
+        e.preventDefault();
+        if (j <= 1) {
+            j = 1
+        } else {
+            j--
+            document.getElementById("peopletext").value = j;
+        }
+    }
+    peopleright.onclick = function (e) {
+        e.preventDefault();
+        j++
+        document.getElementById("peopletext").value = j;
+
+
+    }
+    childrenleft.onclick = function (e) {
+        e.preventDefault();
+        if (k <= 0) {
+            k = 0
+        } else {
+            k--;
+            document.getElementById("childrentext").value = k;
+        }
+    }
+    childrenright.onclick = function (e) {
+        e.preventDefault();
+        k++
+        document.getElementById("childrentext").value = k;
+
+    }
+
+    /*弹窗*/
+    function home() {
+        window.location.href = 'index.html';
+        alert.style.display = 'none';
+    }
+
+    /*个人定制、公司订制相互切换*/
+    let corporate = document.querySelector('.make-top-corporate');
+    let button1 = document.querySelector('#button1');
+    let button2 = document.querySelector('#button2');
+    let renjun = document.querySelector('#renjun');
+    let biaoshi1 = document.querySelector('.biaoshi1');
+    let biaoshi2 = document.querySelector('.biaoshi2');
+    // var oClick = true;
+    function gongsi() {
+        corporate.style.display = 'block';
+        button2.style.color = '#089fff';
+        button1.style.color = '#ebeae4';
+        button1.style.borderColor = '#ebeae4';
+        button2.style.borderColor = '#089fff';
+        biaoshi1.style.display = 'none';
+        biaoshi2.style.display = 'block';
+        $("#form input").each(function(){
+            var mark = document.querySelector(".mark");
+            $("#departure").val('');
+            $("#destination").val('');
+            $("#departureDate").val('');
+            $("#traveDays").val('');
+            $("#travelNumber").val('');
+            $("#travelNumberChildren").val('');
+            $("#budget").val('');
+            $("#companyName").val('');
+            $("#contactName").val('');
+            $("#contactPhone").val('');
+            $("#otherRequirements").val('');
+            mark.style.display = 'none'
+            $("#departure").css('border', '1px solid #ebeae4')
+            $('.marktwo').css('display', 'none')
+            $("#destination").css('border', '1px solid #ebeae4')
+            $('.markfour').css('display', 'none')
+            $("#companyName").css('border', '1px solid #ebeae4')
+            $('.markthree').css('display', 'none')
+            $("#departureDate").css('border', '1px solid #ebeae4')
+            $('.markfive').css('display', 'none')
+            $("#contactName").css('border', '1px solid #ebeae4')
+            $('.marksix').css('display', 'none')
+            $("#contactPhone").css('border', '1px solid #ebeae4')
+        });
+    }
+
+    function geren(){
+
+        corporate.style.display = 'none';
+        button1.style.color = '#089fff';
+        button2.style.color = '#ebeae4';
+        button1.style.borderColor = '#089fff';
+        button2.style.borderColor = '#ebeae4';
+        biaoshi2.style.display = 'none';
+        biaoshi1.style.display = 'block';
+        $("#form input").each(function(){
+            var mark = document.querySelector(".mark");
+            $("#departure").val('');
+            $("#destination").val('');
+            $("#departureDate").val('');
+            $("#traveDays").val('');
+            $("#travelNumber").val('');
+            $("#travelNumberChildren").val('');
+            $("#budget").val('');
+            $("#companyName").val('');
+            $("#contactName").val('');
+            $("#contactPhone").val('');
+            $("#otherRequirements").val('');
+            mark.style.display = 'none'
+            $("#departure").css('border', '1px solid #ebeae4')
+            $('.marktwo').css('display', 'none')
+            $("#destination").css('border', '1px solid #ebeae4')
+            $('.markfour').css('display', 'none')
+            $("#companyName").css('border', '1px solid #ebeae4')
+            $('.markthree').css('display', 'none')
+            $("#departureDate").css('border', '1px solid #ebeae4')
+            $('.markfive').css('display', 'none')
+            $("#contactName").css('border', '1px solid #ebeae4')
+            $('.marksix').css('display', 'none')
+            $("#contactPhone").css('border', '1px solid #ebeae4')
+        });
+    }
+    function onmouup() {
+        var now = document.querySelector('.now')
+        now.style.boxShadow = 'none '
+    }
+    function onmou() {
+        var now = document.querySelector('.now')
+        now.style.boxShadow = 'black 0px 0px 10px';
+    }
+    /*form表单提交*/
+    function logon() {
+        var validSuccess = true;
+        var mark = document.querySelector(".mark");
+        if ($('#departure').val() == "") {
+            mark.style.display = 'block'
+            $("#departure").css('border', '1px solid red')
+            validSuccess = false;
+        }
+
+        if ($('#destination').val() == "") {
+            $('.marktwo').css('display', 'block')
+            $("#destination").css('border', '1px solid red')
+            validSuccess = false;
+        }
+        // if ($('#companyName').val() == "") {
+        //     $('.markfour').css('display', 'block')
+        //     $("#companyName").css('border', '1px solid red')
+        //     validSuccess = false;
+        //     console.log(validSuccess)
+        // }
+
+        if ($('#departureDate').val() == "") {
+            $('.markthree').css('display', 'block')
+            $("#departureDate").css('border', '1px solid red')
+            console.log(validSuccess)
+        }
+
+
+
+        if ($('#contactName').val() == "") {
+            $('.markfive').css('display', 'block')
+            $("#contactName").css('border', '1px solid red')
+        }
+        if ($('#contactPhone').val() == "") {
+            $('.marksix').css('display', 'block')
+            $("#contactPhone").css('border', '1px solid red')
+            validSuccess = false;
+        }
+        if (!validSuccess) {
+            return;
+        }
+        var formObject = {
+            departure:$('#departure').val(),
+            destination:$('#destination').val(),
+            budget:$('#budget').val(),
+            companyName:$('#companyName').val(),
+            contactName:$('#contactName').val(),
+            contactPhone:$('#contactPhone').val(),
+            departureDate:$('#departureDate').val(),
+            travelDays:$('#travelDays').val(),
+            travelNumber:$('#travelNumber').val(),
+            travelNumberChildren:$('#travelNumberChildren').val(),
+            otherRequirements:$('#otherRequirements').val(),
+            source:$('#source').val(),
+            orderSource:$('#orderSource').val()
+        };
+        var formArray =$("#form").serializeArray();
+        $.each(formArray,function(i,item){
+            formObject[item.name] = item.value;
+        });
+            $.ajax({
+                type: "post",
+                url: "https://boss.feiying360.com/api/boss-erp/customizedInformationPc/save",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                crossDomain: true,
+                data: JSON.stringify(formObject),
+                success: function (result) {
+                    console.log(result);//打印服务端返回的数据(调试用)
+                    if (result.code == 200) {
+                        alert.style.display = 'block';
+                    } else {
+                        alert("发送失败");
+                    }
+                }
+            })
+    }
+
+    /*出发日期插件*/
+    laydate.render({
+        elem: '#departureDate',
+        min:0,
+
+    }),
+
+    /*textarea 用户输入限制字数*/
+    $(".tcp_content").focus(function () {
+        if ($(this).val() == "") {
+            $(".tcp_box p").css('display', 'none')
+        }
+    }).blur(function () {
+        if ($(this).val() == "") {
+            $(".tcp_box p").css('display', 'block')
+        } else {
+            $(".tcp_box p").css('display', 'none')
+        }
+    })
+    $(".pl_tcp").click(function () {
+        $(this).css('display', 'none');
+        $(".tcp_content").focus();
+    })
+    $(".tcp_content").change(function () {
+        $(".t_h i").html($(".tcp_content").val().length)
+    })
+    $(".tcp_content").keydown(function () {
+        $(".t_h i").html($(".tcp_content").val().length)
+    })
+    $(".tcp_content").keyup(function () {
+        $(".t_h i").html($(".tcp_content").val().length)
+    })
+
+</script>
+
