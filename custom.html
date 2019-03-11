@@ -14,7 +14,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="./css/main.css">
     <script src="lib/laydate/laydate/laydate.js"></script>
-    <script src="lib/My97DatePicker/WdatePicker.js"></script>
     <script>
         // 分辨率大于等于1680，大部分为1920的情况下，调用此css分辨率大于等于1680，大部分为1920的情况下，调用此css
         if (window.screen.width >= 1680) {
@@ -30,7 +29,7 @@
 </head>
 <body style="height: 926px;background-color: #f0f2f5;">
 <div style="background-color: #f0f2f5;height: 926px">
-    <div style="width:100%;height: 100px;background-color: #ffffff;box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.04);margin-bottom: 24px"
+    <div style="width:1920px;height: 100px;background-color: #ffffff;box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.04);margin-bottom: 24px"
          class="clearfix">
         <img src="./img/logo.png" style="width: 221px;height: 62px;float: left;margin-top: 19px;margin-left: 154px;">
         <input type="button" value="返回官网"
@@ -53,14 +52,14 @@
                 </label>
                 <ul style="display: inline-block;vertical-align: middle;position: relative" class="button">
                     <li>
-                        <input onclick="geren()" type="button" value="私人订制" id="button1" class="active"
+                        <input onclick="geren()" type="button" value="私人定制" id="button1" class="active"
                                style="text-indent: 0px"
                         >
                         <img src="img/duihao.png" class="biaoshi1"
                              style="width: 20px;height: 20px;position: absolute;left: 102px;top: 0px;">
                     </li>
                     <li>
-                        <input onclick="gongsi()" type="button" value="公司订制" style="margin-left: 19px;text-indent: 0px"
+                        <input onclick="gongsi()" type="button" value="公司定制" style="margin-left: 19px;text-indent: 0px"
                                id="button2" class="active1"
                         >
                         <img src="img/duihao.png" class="biaoshi2"
@@ -72,12 +71,12 @@
                 <div class="make-top" style="position: relative">
                     <label class="make" style="margin-left: 14px"><span>*</span>出发地</label>
                     <input id="departure" onfocus="seStyle()" onblur="setStyle()" name="departure" type="text"
-                           placeholder="请输入出发地" class="make-destination" autocomplete="off">
+                           placeholder="请输入出发地" class="make-destination" autocomplete="off" style="cursor:text">
                     <img src="img/gantanhao.png" class="mark"
                          style="width: 16px;height: 16px;position: absolute;left: 242px;top: 10px;display: none">
                     <label class="make"><span>*</span>目的地</label>
                     <input id="destination" onfocus="rStyle()" onblur="brStyle()" required name="destination"
-                           type="text" placeholder="请输入目的地" class="make-destination" autocomplete="off">
+                           type="text" placeholder="请输入目的地" class="make-destination" autocomplete="off" style="cursor:text">
                     <img src="img/gantanhao.png" class="marktwo"
                          style="width: 16px;height: 16px;position: absolute;left: 498px;top: 10px;display: none">
                 </div>
@@ -85,7 +84,7 @@
                     <label class="make"><span>*</span>出发日期</label>
                     <input type="text" onfocus="sStyle()" onblur="srStyle()" required id="departureDate"
                            name="departureDate" placeholder="请选择出发日期"
-                           style="width: 404px;height: 38px;border-radius: 4px;border: solid 1px #ebeae4;"
+                           style="width: 404px;height: 38px;border-radius: 4px;border: solid 1px #ebeae4;cursor: default"
                            autocomplete="off"
                     >
                     <img src="img/gantanhao.png" class="markthree"
@@ -95,13 +94,14 @@
                     <label class="make"><span>*</span>出游天数</label>
                     <ul class="box" style="display: inline-block;vertical-align: middle">
                         <li>
-                            <button type=“button” id="left" class="gt" style="border-right: 1px solid #ebeae4;">—
+                            <button id="left" class="gt" style="border-right: 1px solid #ebeae4;background-color: #ffffff;color: #999999;border-radius: 4px;cursor: pointer;">—
                             </button>
                         </li>
-                        <li><input name="travelDays" id="travelDays" type="text" value="1" style="text-indent: 0px"/></li>
+                        <li><input name="travelDays" id="travelDays" type="text" value="1" onblur="tryStyle()"
+                                   style="text-indent: 0px; cursor: text;" autocomplete="off"/></li>
                         <li>
-                            <button type=“button” id="right" class="gt"
-                                    style="border-left: 1px solid #ebeae4;font-size: 19px">+
+                            <button id="right" class="gt"
+                                    style="border-left: 1px solid #ebeae4;font-size: 19px;cursor: pointer">+
                             </button>
                         </li>
                     </ul>
@@ -111,14 +111,14 @@
                     <div class="make" style="display: inline-block;vertical-align: middle"><span>*</span>出游人数</div>
                     <ul class="box" style="display: inline-block;vertical-align: middle">
                         <li>
-                            <button type=“button” id="peopleleft" class="gt" style="border-right: 1px solid #ebeae4">—
+                            <button type=“button” id="peopleleft" class="gt" style="border-right: 1px solid #ebeae4;cursor: pointer">—
                             </button>
                         </li>
-                        <li><input name="travelNumber" id="peopletext" type="text" value="1" style="text-indent: 0px"/>
+                        <li><input name="travelNumber" id="peopletext" type="text" value="1" style="text-indent: 0px;cursor: text" autocomplete="off" onblur="peopleStyle()"/>
                         </li>
                         <li>
                             <button type=“button” id="peopleright" class="gt"
-                                    style="border-left: 1px solid #ebeae4;font-size: 19px">+
+                                    style="border-left: 1px solid #ebeae4;font-size: 19px;cursor: pointer;">+
                             </button>
                         </li>
                     </ul>
@@ -126,15 +126,15 @@
                     <ul class="box" style="display: inline-block;vertical-align: middle">
                         <li>
                             <button type=“button” id="childrenleft" class="gt"
-                                    style="border-right: 1px solid #ebeae4">
+                                    style="border-right: 1px solid #ebeae4;cursor: pointer">
                                 —
                             </button>
                         </li>
                         <li><input name="travelNumberChildren" id="childrentext" type="text" value="0"
-                                   style="text-indent: 0px"/></li>
+                                   style="text-indent: 0px;cursor: text" autocomplete="off" onblur="boyStyle()"/></li>
                         <li>
                             <button type=“button” id="childrenright" class="gt"
-                                    style="border-left: 1px solid #ebeae4;font-size: 19px">+
+                                    style="border-left: 1px solid #ebeae4;font-size: 19px;cursor: pointer">+
                             </button>
                         </li>
                     </ul>
@@ -143,7 +143,7 @@
                 <div class="make-top">
                     <label class="make"><span id="renjun">*</span>人均预算</label>
                     <input name="budget" type="number" placeholder="请输入人均预算" id="budget"
-                           style="width: 399px;height: 40px;background-color: #ffffff;border-radius: 4px;border: solid 1px #ebeae4;"
+                           style="width: 399px;height: 40px;background-color: #ffffff;border-radius: 4px;border: solid 1px #ebeae4;cursor: text;text-indent: 16px"
                            autocomplete="off"
                            onfocus="renStyle()" onblur="reStyle()"
                     >
@@ -152,7 +152,7 @@
                     <label class="make"><span>*</span>公司名称</label>
                     <input id="companyName" required name="companyName"
                            class="corporate" type="text" placeholder="请输入公司名称"
-                           style="width: 399px;height: 40px;background-color: #ffffff;border-radius: 4px;border: solid 1px #ebeae4;"
+                           style="width: 399px;height: 40px;background-color: #ffffff;border-radius: 4px;border: solid 1px #ebeae4;cursor: text"
                            onfocus="lStyle()" onblur="ltStyle()"
                            autocomplete="off">
                     <img src="img/gantanhao.png" class="markfour"
@@ -163,7 +163,7 @@
                 <div class="make-top" style="position: relative">
                     <label class="make" style="margin-left: 14px"><span>*</span>联系人</label>
                     <input id="contactName" onfocus="tStyle()" onblur="btStyle()" required name="contactName"
-                           type="text" class="make-destination" placeholder="请输入联系人姓名" autocomplete="off">
+                           type="text" class="make-destination" placeholder="请输入联系人姓名" autocomplete="off" style="cursor: text">
                     <img src="img/gantanhao.png" class="markfive"
                          style="width: 16px;height: 16px;position: absolute;left: 242px;top: 10px;display: none">
 
@@ -173,7 +173,7 @@
                            onblur="phonestyle()"
                            onfocus="eStyle()"
                            onkeyup="this.value=this.value.replace(/\D/g,'')"
-                           onafterpaste="this.value=this.value.replace(/\D/g,'')" autocomplete="off">
+                           onafterpaste="this.value=this.value.replace(/\D/g,'')" autocomplete="off" style="cursor: text">
                     <img src="img/gantanhao.png" class="marksix"
                          style="width: 16px;height: 16px;position: absolute;left: 492px;top: 10px;display: none">
                 </div>
@@ -186,12 +186,12 @@
                                   onkeydown="this.value=this.value.substring(0,100)"
                                   onkeyup="this.value=this.value.substring(0,100)" name="otherRequirements"
                                   onblur="teStyle()" onfocus="textStyle()"
-                                  style="width: 398px;height: 120px;background-color: #ffffff;border-radius: 4px;border: solid 1px #ebeae4; resize:none ;text-indent: 16px;padding-top: 8px"></textarea>
+                                  style="width: 398px;height: 120px;background-color: #ffffff;border-radius: 4px;border: solid 1px #ebeae4; resize:none ;text-indent: 16px;padding-top: 8px;cursor: text"></textarea>
                         <p class="pl_tcp">如有其他个性化需求，请尽量描述清晰，以便悠悠更好的为您提供服务！</p>
                         <span class="t_h"><i>0</i>/100</span>
                     </div>
                 </div>
-                <input type="button" onclick="logon()" onmousedown="onmou()" onmouseup="onmouup()" class="now" value="立即订制"
+                <input type="button" onclick="logon()" onmousedown="onmou()" onmouseup="onmouup()" class="now" value="立即定制"
                        style="width: 260px;height: 48px;background-color: #089fff;border-radius: 24px;border-width: 0.01px;
                    font-size: 16px;font-weight: normal;font-stretch: normal;letter-spacing: 0px;color: #ffffff;margin: 28px 0 36px 123px;outline:none;text-indent: 0"
                 >
@@ -232,6 +232,40 @@
     var k = document.getElementById("childrentext").value;
     var alert = document.querySelector(".cover");
 
+    function tryStyle() {
+        document.getElementById('travelDays').style.border = "0px solid #ebeae4"
+        var str = /^\d+$/
+        if (!(str.test($('#travelDays').val()))) {
+            $('#travelDays').val('1')
+            return false;
+        } else if ($('#travelDays').val()<1) {
+            $('#travelDays').val('1')
+        }else {
+            return true
+        }
+    }
+    function peopleStyle() {
+        document.getElementById('peopletext').style.border = "0px solid #ebeae4"
+        var str = /^\d+$/
+        if (!(str.test($('#peopletext').val()))) {
+            $('#peopletext').val('1')
+            return false;
+        } else if ($('#peopletext').val()<1) {
+            $('#peopletext').val('1')
+        }else {
+            return true
+        }
+    }
+    function boyStyle() {
+        document.getElementById('childrentext').style.border = "0px solid #ebeae4"
+        var str = /^\d+$/
+        if (!(str.test($('#childrentext').val()))) {
+            $('#childrentext').val('0')
+            return false;
+        } else if (str) {
+            return true;
+        }
+    }
     function teStyle() {
         document.getElementById('otherRequirements').style.border = "1px solid #ebeae4"
     }
@@ -301,6 +335,10 @@
     }
     function reStyle() {
         document.getElementById('budget').style.border = "1px solid #ebeae4"
+        if ($('#budget').val()<=0){
+            $('#budget').val('')
+            return false;
+        }
     }
     function btStyle() {
         document.getElementById('contactName').style.border = "1px solid #ebeae4"
@@ -331,13 +369,13 @@
             i = 1
         } else {
             i--
-            document.getElementById("text").value = i;
+            document.getElementById("travelDays").value = i;
         }
     }
     right.onclick = function (e) {
         e.preventDefault();
         i++
-        document.getElementById("text").value = i;
+        document.getElementById("travelDays").value = i;
 
     }
     peopleleft.onclick = function (e) {
