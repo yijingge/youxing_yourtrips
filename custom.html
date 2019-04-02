@@ -50,17 +50,19 @@
                     <span>*</span>
                     出游性质
                 </label>
-                <ul style="display: inline-block;vertical-align: middle;position: relative" class="button">
+                <ul style="display: inline-block;vertical-align: middle;position: relative" class="button" id="chuyouxingzhi">
                     <li>
-                        <input onclick="geren()" type="button" value="私人定制" id="button1" class="active"
-                               style="text-indent: 0px"
-                        >
+                            <input onclick="geren()" type="button" value="私人定制" id="button1" class="active" data-type="1"
+                                   style="text-indent: 0px"
+                            >
+                        <input type="hidden" name="travelNature" id="travelNature" value="1">
+
                         <img src="img/duihao.png" class="biaoshi1"
                              style="width: 20px;height: 20px;position: absolute;left: 102px;top: 0px;">
                     </li>
                     <li>
                         <input onclick="gongsi()" type="button" value="公司定制" style="margin-left: 19px;text-indent: 0px"
-                               id="button2" class="active1"
+                               id="button2" class="active1" data-type="2"
                         >
                         <img src="img/duihao.png" class="biaoshi2"
                              style="width: 20px;height: 20px;position: absolute;left: 241px;top: 0px;display: none">
@@ -231,7 +233,6 @@
     var childrenright = document.querySelector("#childrenright");
     var k = document.getElementById("childrentext").value;
     var alert = document.querySelector(".cover");
-
     function tryStyle() {
         document.getElementById('travelDays').style.border = "0px solid #ebeae4"
         var str = /^\d+$/
@@ -317,9 +318,6 @@
         $('#contactPhone').css('border', '1px solid #089fff')
         $('.marksix').css('display', 'none')
     }
-    // function setStyle() {
-    //
-    // }
     function brStyle() {
        document.getElementById('destination').style.border = "1px solid #ebeae4"
         var str = /^[\u4e00-\u9fa5]{2,}$/
@@ -423,7 +421,7 @@
     let renjun = document.querySelector('#renjun');
     let biaoshi1 = document.querySelector('.biaoshi1');
     let biaoshi2 = document.querySelector('.biaoshi2');
-    // var oClick = true;
+
     function gongsi() {
         corporate.style.display = 'block';
         button2.style.color = '#089fff';
@@ -432,6 +430,8 @@
         button2.style.borderColor = '#089fff';
         biaoshi1.style.display = 'none';
         biaoshi2.style.display = 'block';
+        $("#chuyouxingzhi input").removeClass("active");
+        $("#button2").addClass("active");
         $("#form input").each(function(){
             var mark = document.querySelector(".mark");
             $("#departure").val('');
@@ -461,7 +461,6 @@
     }
 
     function geren(){
-
         corporate.style.display = 'none';
         button1.style.color = '#089fff';
         button2.style.color = '#ebeae4';
@@ -469,6 +468,8 @@
         button2.style.borderColor = '#ebeae4';
         biaoshi2.style.display = 'none';
         biaoshi1.style.display = 'block';
+        $("#chuyouxingzhi input").removeClass("active");
+        $("#button1").addClass("active");
         $("#form input").each(function(){
             var mark = document.querySelector(".mark");
             $("#departure").val('');
@@ -506,6 +507,7 @@
     }
     /*form表单提交*/
     function logon() {
+        // console.log($('#chuyouxingzhi li input.active').data("type"));
         var validSuccess = true;
         var mark = document.querySelector(".mark");
         if ($('#departure').val() == "") {
@@ -519,24 +521,17 @@
             $("#destination").css('border', '1px solid red')
             validSuccess = false;
         }
-        // if ($('#companyName').val() == "") {
-        //     $('.markfour').css('display', 'block')
-        //     $("#companyName").css('border', '1px solid red')
-        //     validSuccess = false;
-        //     console.log(validSuccess)
-        // }
 
         if ($('#departureDate').val() == "") {
             $('.markthree').css('display', 'block')
             $("#departureDate").css('border', '1px solid red')
-            console.log(validSuccess)
+            validSuccess = false;
         }
-
-
 
         if ($('#contactName').val() == "") {
             $('.markfive').css('display', 'block')
             $("#contactName").css('border', '1px solid red')
+            validSuccess = false;
         }
         if ($('#contactPhone').val() == "") {
             $('.marksix').css('display', 'block')
@@ -547,6 +542,7 @@
             return;
         }
         var formObject = {
+            travelNature:$('#chuyouxingzhi li input.active').data("type"),
             departure:$('#departure').val(),
             destination:$('#destination').val(),
             budget:$('#budget').val(),
@@ -561,10 +557,6 @@
             source:$('#source').val(),
             orderSource:$('#orderSource').val()
         };
-        var formArray =$("#form").serializeArray();
-        $.each(formArray,function(i,item){
-            formObject[item.name] = item.value;
-        });
             $.ajax({
                 type: "post",
                 url: "https://boss.feiying360.com/api/boss-erp/customizedInformationPc/save",
