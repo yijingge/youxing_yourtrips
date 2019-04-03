@@ -507,7 +507,7 @@
     }
     /*form表单提交*/
     function logon() {
-        // console.log($('#chuyouxingzhi li input.active').data("type"));
+        console.log($('#peopletext').val())
         var validSuccess = true;
         var mark = document.querySelector(".mark");
         if ($('#departure').val() == "") {
@@ -551,8 +551,8 @@
             contactPhone:$('#contactPhone').val(),
             departureDate:$('#departureDate').val(),
             travelDays:$('#travelDays').val(),
-            travelNumber:$('#travelNumber').val(),
-            travelNumberChildren:$('#travelNumberChildren').val(),
+            travelNumber:$('#peopletext').val(),
+            travelNumberChildren:$('#childrentext').val(),
             otherRequirements:$('#otherRequirements').val(),
             source:$('#source').val(),
             orderSource:$('#orderSource').val()
