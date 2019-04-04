@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bce9da5-ae49-4447-8838-b74368f23e68" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/img/advisory.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/img.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom.html" beforeDir="false" afterPath="$PROJECT_DIR$/custom.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,14 +21,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/custom.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="555" column="60" lean-forward="true" selection-start-line="555" selection-start-column="60" selection-end-line="555" selection-end-column="60" />
+            <state relative-caret-position="469">
+              <caret line="47" column="73" selection-start-line="47" selection-start-column="73" selection-end-line="47" selection-end-column="73" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -75,18 +79,6 @@
                 <element signature="n#style#0;n#h1#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h4#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#15426#15790#0" />
-                <element signature="e#15818#16182#0" />
-                <element signature="e#16207#16503#0" />
-                <element signature="e#16527#16622#0" />
-                <element signature="e#16648#16743#0" />
-                <element signature="e#16767#16896#0" />
-                <element signature="e#16921#17224#0" />
-                <element signature="e#17247#17381#0" />
-                <element signature="e#17404#17543#0" />
-                <element signature="e#17567#17658#0" />
-                <element signature="e#17681#17816#0" />
-                <element signature="e#17840#17929#0" />
               </folding>
             </state>
           </provider>
@@ -153,9 +145,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="59" />
-    <option name="y" value="52" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="286" />
     <option name="width" value="1781" />
     <option name="height" value="1001" />
   </component>
@@ -164,6 +156,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="youxing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youxing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youxing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youxing" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youxing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youxing" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -193,22 +206,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="youxing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="youxing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="youxing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="youxing" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,15 +215,15 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\youxing\lib" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\公司项目\youxing\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\公司项目\youxing\img" />
+      <recent name="C:\Users\Administrator\Desktop\youxing\lib" />
       <recent name="D:\公司项目\youxing\lib" />
       <recent name="E:\youxing\img" />
       <recent name="E:\youxing\css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\公司项目\youxing\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -279,17 +276,18 @@
       <workItem from="1554252208860" duration="11000" />
       <workItem from="1554255315036" duration="1280000" />
       <workItem from="1554267218741" duration="132000" />
+      <workItem from="1554363658477" duration="699000" />
+      <workItem from="1554371139451" duration="1848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179664000" />
+    <option name="totallyTimeSpent" value="182211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.10800843" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10800843" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -386,16 +384,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2592">
+          <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/img.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/custom.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="555" column="60" lean-forward="true" selection-start-line="555" selection-start-column="60" selection-end-line="555" selection-end-column="60" />
+        <state relative-caret-position="469">
+          <caret line="47" column="73" selection-start-line="47" selection-start-column="73" selection-end-line="47" selection-end-column="73" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -445,26 +454,7 @@
             <element signature="n#style#0;n#h1#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#15426#15790#0" />
-            <element signature="e#15818#16182#0" />
-            <element signature="e#16207#16503#0" />
-            <element signature="e#16527#16622#0" />
-            <element signature="e#16648#16743#0" />
-            <element signature="e#16767#16896#0" />
-            <element signature="e#16921#17224#0" />
-            <element signature="e#17247#17381#0" />
-            <element signature="e#17404#17543#0" />
-            <element signature="e#17567#17658#0" />
-            <element signature="e#17681#17816#0" />
-            <element signature="e#17840#17929#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2592">
-          <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
         </state>
       </provider>
     </entry>
