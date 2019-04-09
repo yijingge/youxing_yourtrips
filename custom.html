@@ -245,6 +245,7 @@
     var childrenright = document.querySelector("#childrenright");
     var k = document.getElementById("childrentext").value;
     var alert = document.querySelector(".cover");
+    var sourceUrl = window.location.href;
     function tryStyle() {
         document.getElementById('travelDays').style.border = "0px solid #ebeae4"
         var str = /^\d+$/
@@ -567,7 +568,8 @@
             travelNumberChildren:$('#childrentext').val(),
             otherRequirements:$('#otherRequirements').val(),
             source:$('#source').val(),
-            orderSource:$('#orderSource').val()
+            orderSource:$('#orderSource').val(),
+            sourceUrl:sourceUrl
         };
             $.ajax({
                 type: "post",
