@@ -58,7 +58,7 @@
         <form style="" id="form">
             <div class="private">
                 <label class="make"
-                       style="vertical-align: middle">
+                       style="vertical-align: middle;padding-left: 37px">
                     <span>*</span>
                     出游性质
                 </label>
@@ -68,16 +68,15 @@
                                    style="text-indent: 0px"
                             >
                         <input type="hidden" name="travelNature" id="travelNature" value="1">
-
-                        <img src="img/duihao.png" class="biaoshi1"
-                             style="width: 20px;height: 20px;position: absolute;left: 102px;top: 0px;">
+                        <img src="img/select.png" class="biaoshi1"
+                             style="width: 20px;height: 20px;position: absolute;left: 100px;top: 0px;">
                     </li>
                     <li>
                         <input onclick="gongsi()" type="button" value="公司定制" style="margin-left: 19px;text-indent: 0px"
                                id="button2" class="active1" data-type="2"
                         >
-                        <img src="img/duihao.png" class="biaoshi2"
-                             style="width: 20px;height: 20px;position: absolute;left: 241px;top: 0px;display: none">
+                        <img src="img/select.png" class="biaoshi2"
+                             style="width: 20px;height: 20px;position: absolute;left: 239px;top: 0px;display: none">
                     </li>
                 </ul>
             </div>
@@ -88,7 +87,7 @@
                            placeholder="请输入出发地" class="make-destination" autocomplete="off" style="cursor:text">
                     <img src="img/gantanhao.png" class="mark"
                          style="width: 16px;height: 16px;position: absolute;left: 242px;top: 10px;display: none">
-                    <label class="make"><span>*</span>目的地</label>
+                    <label class="make" style="padding-left: 38px;"><span>*</span>目的地</label>
                     <input id="destination" onfocus="rStyle()" onblur="brStyle()" required name="destination"
                            type="text" placeholder="请输入目的地" class="make-destination" autocomplete="off" style="cursor:text">
                     <img src="img/gantanhao.png" class="marktwo"
@@ -98,7 +97,7 @@
                     <label class="make"><span>*</span>出发日期</label>
                     <input type="text" onfocus="sStyle()" onblur="srStyle()" required id="departureDate"
                            name="departureDate" placeholder="请选择出发日期"
-                           style="width: 404px;height: 38px;border-radius: 4px;border: solid 1px #ebeae4;cursor: default"
+                           style="width: 400px;height: 38px;border-radius: 4px;border: solid 1px #ebeae4;cursor: default"
                            autocomplete="off"
                     >
                     <img src="img/gantanhao.png" class="markthree"
@@ -136,7 +135,7 @@
                             </button>
                         </li>
                     </ul>
-                    <span style="font-family: MicrosoftYaHei;font-size: 14px;font-weight: normal;font-stretch: normal;letter-spacing: 0px;color: #333333;margin:0 16px">成人</span>
+                    <span style="font-family: MicrosoftYaHei;font-size: 14px;font-weight: normal;font-stretch: normal;letter-spacing: 0px;color: #333333;margin-left: 6px;margin-right: 32px;">成人</span>
                     <ul class="box" style="display: inline-block;vertical-align: middle">
                         <li>
                             <button type=“button” id="childrenleft" class="gt"
@@ -152,12 +151,12 @@
                             </button>
                         </li>
                     </ul>
-                    <span style="font-family: MicrosoftYaHei;font-size: 14px;font-weight: normal;font-stretch: normal;letter-spacing: 0px;color: #333333;margin:0 16px">儿童</span>
+                    <span style="font-family: MicrosoftYaHei;font-size: 14px;font-weight: normal;font-stretch: normal;letter-spacing: 0px;color: #333333;margin-left: 6px;">儿童</span>
                 </div>
                 <div class="make-top">
                     <label class="make"><span id="renjun">*</span>人均预算</label>
                     <input name="budget" type="number" placeholder="请输入人均预算" id="budget"
-                           style="width: 399px;height: 40px;background-color: #ffffff;border-radius: 4px;border: solid 1px #ebeae4;cursor: text;text-indent: 16px"
+                           style="width: 400px;height: 40px;background-color: #ffffff;border-radius: 4px;border: solid 1px #ebeae4;cursor: text;text-indent: 16px"
                            autocomplete="off"
                            onfocus="renStyle()" onblur="reStyle()"
                     >
@@ -181,7 +180,7 @@
                     <img src="img/gantanhao.png" class="markfive"
                          style="width: 16px;height: 16px;position: absolute;left: 242px;top: 10px;display: none">
 
-                    <label class="make" style="margin-left: -20px"><span>*</span>联系电话</label>
+                    <label class="make" style="margin-left: -19px"><span>*</span>联系电话</label>
                     <input id="contactPhone" required name="contactPhone"
                            type="number" class="make-destination" placeholder="请输入联系电话"
                            onblur="phonestyle()"
@@ -207,7 +206,7 @@
                 </div>
                 <input type="button" onclick="logon()" onmousedown="onmou()" onmouseup="onmouup()" class="now" value="立即定制"
                        style="width: 260px;height: 48px;background-color: #089fff;border-radius: 24px;border-width: 0.01px;
-                   font-size: 16px;font-weight: normal;font-stretch: normal;letter-spacing: 0px;color: #ffffff;margin: 28px 0 36px 123px;outline:none;text-indent: 0"
+                   font-size: 16px;font-weight: normal;font-stretch: normal;letter-spacing: 0px;color: #ffffff;margin: 28px 0 36px 115px;outline:none;text-indent: 0"
                 >
                 <input type="hidden" name="source" id="source" value="C">
                 <input type="hidden" name="orderSource" id="orderSource" value="1">
