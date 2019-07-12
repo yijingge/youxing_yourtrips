@@ -244,6 +244,7 @@
     var k = document.getElementById("childrentext").value;
     var alert = document.querySelector(".cover");
     var sourceUrl = window.location.href;
+    var canClickButton = true
     function tryStyle() {
         document.getElementById('travelDays').style.border = "0px solid #ebeae4"
         var str = /^\d+$/
@@ -569,9 +570,11 @@
             orderSource:$('#orderSource').val(),
             sourceUrl:sourceUrl
         };
+        if (canClickButton === true) {
+            canClickButton = false
             $.ajax({
                 type: "post",
-                url: "http://boss.youtrips.cn/api/boss-erp/customizedInformationPc/save",
+                url: "https://boss.feiying360.com/api/boss-erp/customizedInformationPc/save",
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 crossDomain: true,
@@ -585,6 +588,12 @@
                     }
                 }
             })
+            canClickButton = true
+            return true
+        } else {
+            return false
+        }
+
     }
 
     /*出发日期插件*/
