@@ -38,4 +38,10 @@ h2{
 .makelogo:hover{
   box-shadow: 0px 6px 10px rgba(13, 139, 255, 0.5);
 }
-
+.putRecords{
+  color: #ffff;
+  text-decoration: none;
+}
+.putRecords:hover{
+  color: #3983e5;
+}
