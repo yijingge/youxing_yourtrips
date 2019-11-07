@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bce9da5-ae49-4447-8838-b74368f23e68" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/redirect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom.html" beforeDir="false" afterPath="$PROJECT_DIR$/custom.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+            <state relative-caret-position="-2268">
+              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#span#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -44,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/custom.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="581" column="40" selection-start-line="581" selection-start-column="40" selection-end-line="581" selection-end-column="40" />
+            <state relative-caret-position="282">
+              <caret line="605" column="40" lean-forward="true" selection-start-line="605" selection-start-column="40" selection-end-line="605" selection-end-column="40" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -71,7 +70,6 @@
                 <element signature="n#style#0;n#label#1;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#1;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#1;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#2;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -89,7 +87,6 @@
                 <element signature="n#style#0;n#span#1;n#div#3;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#4;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#input#0;n#div#4;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#5;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#input#0;n#div#5;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#5;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#6;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -107,6 +104,9 @@
                 <element signature="n#style#0;n#h1#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h4#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#22541#24178#0" />
+                <element signature="e#24200#25836#0" />
+                <element signature="e#25976#26084#0" />
               </folding>
             </state>
           </provider>
@@ -123,17 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ICON</find>
-      <find>make-custom</find>
-      <find>button1</find>
-      <find>travelNature</find>
-      <find>contactName</find>
-      <find>geren</find>
-      <find>chuyouxingzhi</find>
-      <find>travelNumber</find>
-      <find>travelNumberChildren</find>
-      <find>sourceUrl</find>
-      <find>biaoshi1</find>
       <find>duihao</find>
       <find>select</find>
       <find>扫一扫</find>
@@ -153,6 +142,17 @@
       <find>custom</find>
       <find>返回官网</find>
       <find>canClickButton</find>
+      <find>orderSource</find>
+      <find>sourceUrl</find>
+      <find>budget</find>
+      <find>travelDays</find>
+      <find>departureDate</find>
+      <find>travelNumber</find>
+      <find>otherRequirements</find>
+      <find>source</find>
+      <find>companyName</find>
+      <find>intentionSource</find>
+      <find>公司名称</find>
     </findStrings>
     <replaceStrings>
       <replace>http://www.beian.miit.gov.cn</replace>
@@ -169,19 +169,19 @@
         <option value="$PROJECT_DIR$/lib/My97DatePicker/WdatePicker.js" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/css/public.css" />
-        <option value="$PROJECT_DIR$/custom.html" />
         <option value="$PROJECT_DIR$/悠行官网.txt" />
         <option value="$PROJECT_DIR$/redirect.js" />
         <option value="$PROJECT_DIR$/lib/redirect.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/custom.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-132" />
-    <option name="y" value="152" />
+    <option name="x" value="405" />
+    <option name="y" value="68" />
     <option name="width" value="1459" />
-    <option name="height" value="1047" />
+    <option name="height" value="1088" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -194,11 +194,6 @@
             <path>
               <item name="悠行官网" type="b2602c69:ProjectViewProjectNode" />
               <item name="悠行官网" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="悠行官网" type="b2602c69:ProjectViewProjectNode" />
-              <item name="悠行官网" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -242,15 +237,16 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\公司项目\悠行官网\lib" />
+      <recent name="D:\公司项目\youxing\img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\公司项目\youxing\img" />
       <recent name="C:\Users\Administrator\Desktop\youxing\lib" />
       <recent name="D:\公司项目\youxing\lib" />
       <recent name="E:\youxing\img" />
       <recent name="E:\youxing\css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\公司项目\youxing\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -328,12 +324,14 @@
       <workItem from="1569400815110" duration="5733000" />
       <workItem from="1569559203350" duration="760000" />
       <workItem from="1571102939602" duration="1455000" />
-      <workItem from="1571707056066" duration="242000" />
+      <workItem from="1571707056066" duration="431000" />
+      <workItem from="1572829565978" duration="40000" />
+      <workItem from="1572921919078" duration="19463000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221806000" />
+    <option name="totallyTimeSpent" value="241498000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -457,6 +455,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/redirect.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/public.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1512">
@@ -464,10 +465,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2268">
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#span#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/custom.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="581" column="40" selection-start-line="581" selection-start-column="40" selection-end-line="581" selection-end-column="40" />
+        <state relative-caret-position="282">
+          <caret line="605" column="40" lean-forward="true" selection-start-line="605" selection-start-column="40" selection-end-line="605" selection-end-column="40" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -490,7 +502,6 @@
             <element signature="n#style#0;n#label#1;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#2;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -508,7 +519,6 @@
             <element signature="n#style#0;n#span#1;n#div#3;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#4;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#input#0;n#div#4;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#5;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#input#0;n#div#5;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#5;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#6;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -526,20 +536,9 @@
             <element signature="n#style#0;n#h1#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/redirect.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#span#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#22541#24178#0" />
+            <element signature="e#24200#25836#0" />
+            <element signature="e#25976#26084#0" />
           </folding>
         </state>
       </provider>

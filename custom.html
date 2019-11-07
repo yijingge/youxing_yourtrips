@@ -530,9 +530,31 @@
         var now = document.querySelector('.now')
         now.style.boxShadow = 'black 0px 0px 10px';
     }
+
+    /*获取 intentionSource */
+    function getRequest() {
+        let url = location.search
+        let theRequest = {}
+        if (url.indexOf('?') !== -1) {
+            let str = url.substr(1)
+            let strs = str.split('&')
+            for (let i = 0; i < strs.length; i++) {
+                theRequest[strs[i].split('=')[0]] = unescape(strs[i].split('=')[1])
+            }
+        }
+        return theRequest
+    }
+
     /*form表单提交*/
     function logon() {
-        console.log($('#peopletext').val())
+        // var search = location.search;
+        // var intentionSource = search.split("=")[1]
+
+        var Request = undefined;
+        Request = getRequest();
+        var intentionSource = Request["intentionSource"];
+
+
         var validSuccess = true;
         var mark = document.querySelector(".mark");
         if ($('#departure').val() == "") {
@@ -568,26 +590,28 @@
         }
         var formObject = {
             travelNature:$('#chuyouxingzhi li input.active').data("type"),
-            departure:$('#departure').val(),
-            destination:$('#destination').val(),
-            budget:$('#budget').val(),
-            companyName:$('#companyName').val(),
-            contactName:$('#contactName').val(),
-            contactPhone:$('#contactPhone').val(),
-            departureDate:$('#departureDate').val(),
-            travelDays:$('#travelDays').val(),
-            travelNumber:$('#peopletext').val(),
-            travelNumberChildren:$('#childrentext').val(),
-            otherRequirements:$('#otherRequirements').val(),
+            departureName:$('#departure').val(), // 出发地
+            destinationName:$('#destination').val(), // 目的地
+            budget:$('#budget').val(), // 人均预算
+            companyName:$('#companyName').val(), // 公司名称
+            contactName:$('#contactName').val(), // 名称
+            contactPhone:$('#contactPhone').val(), // 电话
+            travelDate:$('#departureDate').val(), // 出发日期
+            travelDays:$('#travelDays').val(), // 出游天数
+            adultNumber:$('#peopletext').val(), // 成人
+            childNumber:$('#childrentext').val(), // 儿童
+            remarks:$('#otherRequirements').val(), // 备注
             source:$('#source').val(),
             orderSource:$('#orderSource').val(),
-            sourceUrl:sourceUrl
+            sourceUrl:sourceUrl, // 网址来源
+            intentionSource: intentionSource ? intentionSource:'2', // 来源
         };
+
         if (canClickButton === true) {
             canClickButton = false
             $.ajax({
                 type: "post",
-                url: "https://boss.feiying360.com/api/boss-erp/customizedInformationPc/save",
+                url: "https://boss.feiying360.com/api/intention",
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 crossDomain: true,
